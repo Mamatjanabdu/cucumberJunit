@@ -50,28 +50,28 @@ public class javaInterviewQuestions {
         // for exam: Tool- Stool, Read - Dear, Worth - Throw, Pore- Rope, charm - march.
 
 
-        public static void main(String[] args) {
-            String first ="read";
-            String second ="read";
-            System.out.println(isAnagram(first, second));
-        }
-        public static boolean isAnagram(String str1, String str2) {
-            if (str1.length()!=str2.length()) {
-                return false;
-            }
-            char [] firstCharArr =str1.toCharArray();// charm=> 'c','h','a','r','m'
-
-            char [] secondCharArr = str2.toCharArray();// march=> 'm','a','r','c','h'
-            //sorted==>a,c,h,m,r
-            Arrays.sort(firstCharArr);
-            Arrays.sort(secondCharArr);
-            for(int i =0; i<firstCharArr.length;i++) {
-                if(firstCharArr[i]!=secondCharArr[i]) {
-                    return false;
-                }
-            }
-            return true;
-        }
+//        public static void main(String[] args) {
+//            String first ="read";
+//            String second ="read";
+//            System.out.println(isAnagram(first, second));
+//        }
+//        public static boolean isAnagram(String str1, String str2) {
+//            if (str1.length()!=str2.length()) {
+//                return false;
+//            }
+//            char [] firstCharArr =str1.toCharArray();// charm=> 'c','h','a','r','m'
+//
+//            char [] secondCharArr = str2.toCharArray();// march=> 'm','a','r','c','h'
+//            //sorted==>a,c,h,m,r
+//            Arrays.sort(firstCharArr);
+//            Arrays.sort(secondCharArr);
+//            for(int i =0; i<firstCharArr.length;i++) {
+//                if(firstCharArr[i]!=secondCharArr[i]) {
+//                    return false;
+//                }
+//            }
+//            return true;
+//        }
     }
 
 }
